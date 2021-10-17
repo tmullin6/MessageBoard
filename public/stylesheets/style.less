@@ -1,12 +1,19 @@
-
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
 
 .title {
-  height: 80px;
+  height: 60px;
   width: 100%;
   margin-top: 0px;
   padding-top: 10px;
   text-align: center;
   font-size: 40px;
+  text-shadow: 1px 1px black;
+  background-color: blue;
+  box-shadow: 1px 1px black;
+  color: white;
+
 }
 
 .add-message {
@@ -17,11 +24,13 @@
   padding: 8px;
   margin-left: 42vw;
   font-size: 15px;
+  background-color: lighten(blue, 20%);
 }
 
 .message-list {
-  height: 300px;
-  margin-left: 32vw;
+  height: 415px;
+  margin-left: 23vw;
+  width: 700px;
   list-style: none;  //;]
   overflow-y: auto;
 
@@ -29,8 +38,29 @@
     height: fit-content;
     width: 400px;
     padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 85px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px gray;
+
+    .message-text {
+      padding: 10px;
+
+    }
 
   }
+}
+
+.footer {
+  border: 1px solid black;
+  text-align: end;
+  padding-top: 31px;
+  padding-right: 5px;
+  height: 20px;
+  width: 100%;
+
 }
 
 .form-title {
@@ -54,7 +84,11 @@
   .form-submit {
     display: block;
     height: fit-content;
+    font-size: 20px;
     width: 100px;
     margin-left: 150px;
+    margin-top: 15px;
+    background-color: lighten(blue, 20%);
+    color: white;
   }
 }
