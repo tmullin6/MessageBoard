@@ -3,7 +3,13 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.render('form',{title: 'User Form', header: 'This is where the form goes',body:'TODO: Form Here'});
+  res.render('form',
+  {
+    title: 'Create New Post - Speak Up', 
+    pageTitle: "Speak Up "
+
+  });
+  
 });
 
 module.exports = router;

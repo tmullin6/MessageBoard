@@ -5,7 +5,19 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= header %></h1>
-    <p><%= body %></p>
+    <h1 class="title"><%= pageTitle %></h1>
+
+    <div class="form-title">
+      <p >Tell Us What's on Your Mind</p>
+    </div>
+
+    <div class="form">
+      <form method="POST" action="/new">
+        <input class="name-input" type="text" name="name" placeholder="Enter your name" required><br>
+        <textarea name = "text" placeholder="What's on your mind?" rows="10" cols="50" required></textarea><br>
+        <button type="submit" class="form-submit">Submit</button>
+      </form>
+    </div>
+
   </body>
 </html>
